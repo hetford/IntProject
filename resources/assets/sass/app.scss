@@ -1,0 +1,142 @@
+@import "_variables";
+
+body {
+  background-color: $body-bg;
+}
+
+.clear {
+  clear: both;
+}
+
+.select-dropdown {
+  color: $input-placeholder;
+
+}
+
+nav {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#6961f1+0,7c70f7+100 */
+  background: #6961f1; /* Old browsers */
+  background: -moz-linear-gradient(left, $navbar-gradiant-bottom 0%, $navbar-gradiant-top 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, $navbar-gradiant-bottom 0%, $navbar-gradiant-top 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, $navbar-gradiant-bottom 0%, $navbar-gradiant-top 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$navbar-gradiant-bottom', endColorstr='$navbar-gradiant-top', GradientType=1); /* IE6-9 */
+}
+
+.contentContainer {
+  margin-top: 1em;
+  padding: 1em 1em 0 1em;
+  background-color: $content-bg;
+}
+
+.input-field label {
+  top: 0px !important;
+}
+
+.btn {
+  background-color: $btn-default-color;
+}
+
+.btn:hover {
+  background-color: $btn-default-hover;
+}
+
+*::-webkit-input-placeholder {
+  color: $input-placeholder;
+}
+
+*:-moz-placeholder {
+  /* FF 4-18 */
+  color: $input-placeholder;
+}
+
+*::-moz-placeholder {
+  /* FF 19+ */
+  color: $input-placeholder;
+}
+
+*:-ms-input-placeholder {
+  /* IE 10+ */
+  color: $input-placeholder;
+}
+
+.help-block {
+  padding: 1em 1em;
+  margin: 1em 0;
+  display: block;
+  background-color: #f2dede;
+  border: 1px solid #edbdbd;
+  width: 100%;
+}
+
+.success-block {
+  padding: 1em 1em;
+  margin: 1em 0;
+  display: block;
+  background-color: #dff0d8;
+  border: 1px solid #c4d3be;
+  width: 100%;
+}
+
+.no-docs-block {
+  padding: 1em 0em;
+  margin: 1em 0;
+  display: block;
+  width: 100%;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+.collection li a {
+  padding: 0 0 0 1em;
+}
+
+.collapse_icon {
+  cursor: hand;
+}
+
+.userNameList {
+  display: inline-block;
+ width: 200px !important;
+}
+
+#brand-document {
+  font-size: 0.6em;
+}
+
+@media only screen and (max-width: 450px) {
+  li {
+    overflow: hidden;
+  }
+
+  .document-name {
+    display: block;
+  }
+  .function-icons {
+    display: block;
+    float: left;
+    padding: 1em 0 0 0;
+  }
+
+  .function-icons a:last-child {
+    padding: 0px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  #brand-document {
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    top: 35px;
+  }
+
+  nav {
+    height: 85px;
+  }
+
+  nav .button-collapse i {
+    line-height: 85px;
+  }
+
+}
